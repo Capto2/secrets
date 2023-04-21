@@ -13,6 +13,7 @@ const findOrCreate = require("mongoose-findorcreate");
 //represent modules
 const app = express();
 
+//use modules
 app.use(bodyparser.urlencoded({ extended: true }));
 app.use(express.static("public"));
 app.set("view engine", "ejs");
